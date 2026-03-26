@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects | Egshiglen Regjidpel</title>
+    <title>Gallery | Egshiglen Regjidpel</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -14,97 +14,180 @@
             <ul class="nav-menu">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="projects.html" class="active">Gallery</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <h1>Projects & Work</h1>
-        
-        <section class="projects-grid">
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="https://via.placeholder.com/400x250?text=Artwork+1" alt="Jellyfish Illustration">
+        <h1>Art Gallery</h1>
+        <p class="gallery-intro">A selection of my illustrations, character designs, and animation projects.</p>
+
+        <div class="gallery-filters">
+            <button class="filter-btn active" data-filter="all">All Work</button>
+            <button class="filter-btn" data-filter="digital">Digital Art</button>
+            <button class="filter-btn" data-filter="traditional">Traditional</button>
+            <button class="filter-btn" data-filter="animation">Animation</button>
+        </div>
+
+        <div class="gallery-grid">
+            <!-- Artwork 1 - Digital Jellyfish -->
+            <div class="gallery-item" data-category="digital">
+                <div class="gallery-image">
+                    <!-- Replace with your actual artwork -->
+                    <img src="https://via.placeholder.com/400x300/fef3db/6ba5b0?text=Jellyfish+Illustration" alt="Jellyfish digital illustration">
                 </div>
-                <div class="project-info">
-                    <h3>Jellyfish Series</h3>
-                    <p class="project-category">Digital Illustration</p>
-                    <p>A collection of digital illustrations exploring different jellyfish species, created using Procreate.</p>
-                    <div class="project-tags">
-                        <span>Digital Art</span>
-                        <span>Procreate</span>
-                    </div>
+                <div class="gallery-caption">
+                    <h3>Jellyfish Study</h3>
+                    <p>Digital illustration, 2024</p>
+                    <span class="art-tag">Procreate</span>
                 </div>
             </div>
 
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="https://via.placeholder.com/400x250?text=Artwork+2" alt="Snake Illustration">
+            <!-- Artwork 2 - Snake Illustration -->
+            <div class="gallery-item" data-category="digital">
+                <div class="gallery-image">
+                    <img src="https://via.placeholder.com/400x300/fef3db/6ba5b0?text=Snake+Illustration" alt="Snake digital illustration">
                 </div>
-                <div class="project-info">
-                    <h3>Snake Studies</h3>
-                    <p class="project-category">Illustration & Research</p>
-                    <p>Illustrated guide to local snake species, combining scientific accuracy with artistic expression.</p>
-                    <div class="project-tags">
-                        <span>Illustration</span>
-                        <span>Science Art</span>
-                    </div>
+                <div class="gallery-caption">
+                    <h3>Snake Portrait</h3>
+                    <p>Digital illustration, 2024</p>
+                    <span class="art-tag">Photoshop</span>
                 </div>
             </div>
 
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="https://via.placeholder.com/400x250?text=Animation+1" alt="Animation Project">
+            <!-- Artwork 3 - Character Design -->
+            <div class="gallery-item" data-category="digital">
+                <div class="gallery-image">
+                    <img src="https://via.placeholder.com/400x300/fef3db/6ba5b0?text=Character+Design" alt="Character design sketches">
                 </div>
-                <div class="project-info">
-                    <h3>Marine Life Animation</h3>
-                    <p class="project-category">2D Animation</p>
-                    <p>A short animated piece featuring marine creatures, created as part of my animation learning journey.</p>
-                    <div class="project-tags">
-                        <span>Animation</span>
-                        <span>2D</span>
-                    </div>
+                <div class="gallery-caption">
+                    <h3>Character Designs</h3>
+                    <p>Digital sketches, 2024</p>
+                    <span class="art-tag">Character Design</span>
                 </div>
             </div>
 
-            <div class="project-card">
-                <div class="project-image">
-                    <img src="https://via.placeholder.com/400x250?text=Research+Project" alt="Research Project">
+            <!-- Artwork 4 - Traditional Sketchbook -->
+            <div class="gallery-item" data-category="traditional">
+                <div class="gallery-image">
+                    <img src="https://via.placeholder.com/400x300/fef3db/6ba5b0?text=Sketchbook+Page" alt="Sketchbook drawings">
                 </div>
-                <div class="project-info">
-                    <h3>Marine Biology Research</h3>
-                    <p class="project-category">Academic Research</p>
-                    <p>School research project on the impact of environmental changes on local aquatic ecosystems.</p>
-                    <div class="project-tags">
-                        <span>Research</span>
-                        <span>Biology</span>
-                    </div>
+                <div class="gallery-caption">
+                    <h3>Marine Life Studies</h3>
+                    <p>Pencil & watercolor, 2024</p>
+                    <span class="art-tag">Sketchbook</span>
                 </div>
             </div>
-        </section>
 
-        <section class="current-work">
-            <h2>Current Work</h2>
-            <div class="current-list">
-                <div class="current-item">
-                    <h3>Animated Short Film</h3>
-                    <p>A short animated piece exploring marine life through character animation. Currently in development.</p>
+            <!-- Artwork 5 - Crochet Project -->
+            <div class="gallery-item" data-category="traditional">
+                <div class="gallery-image">
+                    <img src="https://via.placeholder.com/400x300/fef3db/6ba5b0?text=Crochet+Jellyfish" alt="Crochet jellyfish">
                 </div>
-                <div class="current-item">
-                    <h3>Art Portfolio Development</h3>
-                    <p>Building a comprehensive portfolio of illustrations and animations for university applications.</p>
+                <div class="gallery-caption">
+                    <h3>Crochet Jellyfish</h3>
+                    <p>Handmade amigurumi, 2024</p>
+                    <span class="art-tag">Textile Art</span>
+                </div>
+            </div>
+
+            <!-- Artwork 6 - Animation Still -->
+            <div class="gallery-item" data-category="animation">
+                <div class="gallery-image">
+                    <img src="https://via.placeholder.com/400x300/fef3db/6ba5b0?text=Animation+Still" alt="Animation project still">
+                </div>
+                <div class="gallery-caption">
+                    <h3>Jellyfish Animation</h3>
+                    <p>2D animation, 2025</p>
+                    <span class="art-tag">Procreate Dreams</span>
+                </div>
+            </div>
+
+            <!-- Artwork 7 - Ocean Scene -->
+            <div class="gallery-item" data-category="digital">
+                <div class="gallery-image">
+                    <img src="https://via.placeholder.com/400x300/fef3db/6ba5b0?text=Ocean+Scene" alt="Ocean digital painting">
+                </div>
+                <div class="gallery-caption">
+                    <h3>Ocean Floor</h3>
+                    <p>Digital painting, 2024</p>
+                    <span class="art-tag">Procreate</span>
+                </div>
+            </div>
+
+            <!-- Artwork 8 - Animation WIP -->
+            <div class="gallery-item" data-category="animation">
+                <div class="gallery-image">
+                    <img src="https://via.placeholder.com/400x300/fef3db/6ba5b0?text=Animation+Work+in+Progress" alt="Animation work in progress">
+                </div>
+                <div class="gallery-caption">
+                    <h3>Sea Turtle Animation</h3>
+                    <p>Work in progress, 2025</p>
+                    <span class="art-tag">Animation</span>
+                </div>
+            </div>
+        </div>
+
+        <section class="achievements">
+            <h2>Achievements</h2>
+            <div class="achievements-list">
+                <div class="achievement-item">
+                    <span class="achievement-year">2024</span>
+                    <div class="achievement-content">
+                        <h3>UEIS Art Exhibition</h3>
+                        <p>Featured artist for marine life illustration showcase</p>
+                    </div>
+                </div>
+                <div class="achievement-item">
+                    <span class="achievement-year">2024</span>
+                    <div class="achievement-content">
+                        <h3>Youth Science Symposium</h3>
+                        <p>Honorable mention for marine biology research project</p>
+                    </div>
+                </div>
+                <div class="achievement-item">
+                    <span class="achievement-year">2025</span>
+                    <div class="achievement-content">
+                        <h3>School Art Competition</h3>
+                        <p>First place in digital illustration category</p>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2025 Egshiglen Regjidpel</p>
+        <p>© 2025 Egshiglen Regjidpel</p>
         <div class="footer-links">
             <a href="https://github.com/yourusername" target="_blank">GitHub</a>
             <a href="mailto:youremail@example.com">Email</a>
         </div>
     </footer>
+
+    <script>
+        // Simple filter functionality
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Update active button
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                const filter = btn.dataset.filter;
+                
+                // Filter items
+                galleryItems.forEach(item => {
+                    if (filter === 'all' || item.dataset.category === filter) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
